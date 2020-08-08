@@ -1,4 +1,3 @@
-import { WizardStepDirective } from './../wizard-step.directive';
 import {
   Component,
   ContentChildren,
@@ -6,7 +5,8 @@ import {
   AfterContentChecked,
   AfterContentInit,
 } from '@angular/core';
-import { WizardStep } from './wizard-step';
+import { WizardStepDirective } from '../directives/wizard-step.directive';
+import { WizardStep } from '../wizard-step';
 
 @Component({
   selector: 'app-wizard',

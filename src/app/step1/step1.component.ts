@@ -1,7 +1,6 @@
 import { Component, forwardRef } from '@angular/core';
 
 import { WizardStep } from '../wizard/wizard-step';
-import { Subject, ReplaySubject } from 'rxjs';
 
 @Component({
   selector: 'app-step1',

@@ -1,6 +1,5 @@
-import { Component, OnInit, forwardRef } from '@angular/core';
+import { Component, forwardRef } from '@angular/core';
 import { WizardStep } from '../wizard/wizard-step';
-import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-step3',
