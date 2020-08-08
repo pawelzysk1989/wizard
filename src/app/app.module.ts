@@ -1,3 +1,4 @@
+import { WizardOutletTemplateModule } from './wizard-outlet-template/wizard-outlet-template.module';
 import { WizardModule } from './wizard/wizard.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -9,7 +10,7 @@ import { Step3Component } from './step3/step3.component';
 
 @NgModule({
   declarations: [AppComponent, Step1Component, Step2Component, Step3Component],
-  imports: [BrowserModule, WizardModule],
+  imports: [BrowserModule, WizardModule, WizardOutletTemplateModule],
   providers: [],
   bootstrap: [AppComponent],
 })

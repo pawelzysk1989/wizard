@@ -2,7 +2,6 @@ import {
   Component,
   ContentChildren,
   QueryList,
-  AfterContentChecked,
   AfterContentInit,
 } from '@angular/core';
 import { WizardStepDirective } from '../directives/wizard-step.directive';

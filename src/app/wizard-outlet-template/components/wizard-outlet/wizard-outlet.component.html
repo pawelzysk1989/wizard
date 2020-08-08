@@ -1,0 +1,13 @@
+<h1>WizardOutlet</h1>
+
+<ng-container *ngFor="let template of stepTemplates; index as index">
+  <ng-container
+    *ngIf="isActive(index)"
+    [ngTemplateOutlet]="template"
+  ></ng-container>
+</ng-container>
+
+<div>
+  <button [disabled]="isFirst" (click)="back()">back</button>
+  <button [disabled]="isLast" (click)="forward()">forward</button>
+</div>
