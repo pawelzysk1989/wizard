@@ -3,6 +3,7 @@ import {
   ContentChildren,
   QueryList,
   TemplateRef,
+  ContentChild,
 } from '@angular/core';
 
 @Component({
@@ -15,6 +16,13 @@ export class WizardOutletComponent {
   @ContentChildren('step') stepTemplates: QueryList<
     TemplateRef<any>
   > = new QueryList();
+
+  defaultNavigationContext = {
+    back: this.back.bind(this),
+    forward: this.forward.bind(this),
+  };
+
+  @ContentChild('navigation') navigation: TemplateRef<any> | undefined;
 
   get isLast(): boolean {
     return this.activeStep === this.stepTemplates.length - 1;

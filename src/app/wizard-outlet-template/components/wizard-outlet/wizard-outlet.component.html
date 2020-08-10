@@ -7,7 +7,17 @@
   ></ng-container>
 </ng-container>
 
-<div>
-  <button [disabled]="isFirst" (click)="back()">back</button>
-  <button [disabled]="isLast" (click)="forward()">forward</button>
-</div>
+<ng-container
+  *ngTemplateOutlet="
+    navigation || defaultNavigation;
+    context: defaultNavigationContext
+  "
+>
+</ng-container>
+
+<ng-template #defaultNavigation>
+  <div>
+    <button [disabled]="isFirst" (click)="back()">back</button>
+    <button [disabled]="isLast" (click)="forward()">forward</button>
+  </div>
+</ng-template>

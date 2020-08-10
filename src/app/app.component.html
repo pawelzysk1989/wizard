@@ -8,4 +8,16 @@
   <ng-template #step>step1</ng-template>
   <ng-template #step>step2</ng-template>
   <ng-template #step>step3</ng-template>
+  <ng-template #navigation let-back="back" let-forward="forward">
+    <div>
+      <button (click)="back()">BACK</button>
+      <button (click)="forward()">FORWARD</button>
+    </div>
+  </ng-template>
 </app-wizard-outlet>
+
+<app-wizard-cdk #cdkStepper>
+  <cdk-step>Step 1</cdk-step>
+  <cdk-step>Step 2</cdk-step>
+  <cdk-step [editable]="false">Step 3</cdk-step>
+</app-wizard-cdk>
