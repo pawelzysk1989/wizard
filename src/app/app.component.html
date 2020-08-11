@@ -21,3 +21,13 @@
   <cdk-step>Step 2</cdk-step>
   <cdk-step [editable]="false">Step 3</cdk-step>
 </app-wizard-cdk>
+
+<app-wizard-reverse>
+  <ng-template appWizardReverseStep><span>step1</span></ng-template>
+  <ng-template appWizardReverseStep><span>step2</span></ng-template>
+  <ng-template appWizardReverseStep><span>step3</span></ng-template>
+  <div>
+    <button appWizardPreviousStep>BACK</button>
+    <button appWizardNextStep>FORWARD</button>
+  </div>
+</app-wizard-reverse>
