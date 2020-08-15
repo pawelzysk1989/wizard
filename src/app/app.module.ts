@@ -10,6 +10,7 @@ import { Step2Component } from './step2/step2.component';
 import { Step3Component } from './step3/step3.component';
 import { WizardCdkComponent } from './wizard-cdk/wizard-cdk.component';
 import { WizardReverseModule } from './wizard-reverse/wizard-reverse.module';
+import { WizardCdkLikeModule } from './wizard-cdk-like/wizard-cdk-like.module';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { WizardReverseModule } from './wizard-reverse/wizard-reverse.module';
     WizardOutletTemplateModule,
     CdkStepperModule,
     WizardReverseModule,
+    WizardCdkLikeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
